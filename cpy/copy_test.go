@@ -13,7 +13,8 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/google/go-cpy/cpy"
+
+	"github.com/zchee/go-cpy/cpy"
 )
 
 type S struct {
@@ -55,9 +56,11 @@ type S struct {
 	PTi *time.Time
 }
 
-type Proto interface{ Proto() }
-type ProtoM1 interface{ ProtoM1() }
-type ProtoM2 interface{ ProtoM2() }
+type (
+	Proto   interface{ Proto() }
+	ProtoM1 interface{ ProtoM1() }
+	ProtoM2 interface{ ProtoM2() }
+)
 
 type M struct{ A, a int }
 

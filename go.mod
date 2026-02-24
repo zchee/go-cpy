@@ -1,4 +1,4 @@
-module github.com/google/go-cpy
+module github.com/zchee/go-cpy
 
 go 1.17
 
